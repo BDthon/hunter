@@ -13,7 +13,7 @@ keyboard.row(start_button)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, 'نورت عزيزي في بوت صيد يوزرات ثلاثيه ومييزة وتربل @up_uo اضغط على بدأ الصيد واستمتع.', reply_markup=keyboard)
+    bot.reply_to(message, 'نورت عزيزي في بوت صيد يوزرات ثلاثيه ومييزة وتربل @T33Td اضغط على بدأ الصيد واستمتع.', reply_markup=keyboard)
 
 @bot.callback_query_handler(func=lambda call: call.data in ['start_hunting'])
 def handle_callback_query(call):
@@ -48,7 +48,7 @@ def start_hunting(message):
        if req.text.find('If you have <strong>Telegram</strong>, you can contact <a class="tgme_username_link"')>=0: 
         bot.reply_to(message, f" [{j}] ✅ ☑️    >> [ {user} ]")
         try:
-         req = requests.post(f'''https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={message.chat.id}&text=-\n 𝗨𝗦𝗘𝗥 :  @{user} \n @up_uo -''')
+         req = requests.post(f'''https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={message.chat.id}&text=-\n 𝗨𝗦𝗘𝗥 :  @{user} \n @T33TD -''')
         except NameError:
          pass
        else:
